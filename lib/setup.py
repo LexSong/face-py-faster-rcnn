@@ -140,13 +140,13 @@ ext_modules = [
         extra_compile_args={'gcc': []},
         include_dirs = [numpy_include],
     ),
-    Extension(
-        "pycocotools._mask",
-        sources=['pycocotools\\maskApi.c', 'pycocotools\\_mask.pyx'],
-        include_dirs = [numpy_include, 'pycocotools'],
-        extra_compile_args={
-            'gcc': ['-std=c99']},
-    ),
+    #Extension(
+    #    "pycocotools._mask",
+    #    sources=['pycocotools\\maskApi.c', 'pycocotools\\_mask.pyx'],
+    #    include_dirs = [numpy_include, 'pycocotools'],
+    #    extra_compile_args={
+    #        'gcc': ['-std=c99']},
+    #),
     #Extension(   # just used to get nms\gpu_nms.obj
     #    "nms.gpu_nms",
     #    sources=['nms\\gpu_nms.pyx'],
